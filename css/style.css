@@ -1,0 +1,148 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Bunner */
+.bunner {
+    position: relative;
+    
+}
+.bunner img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* Header */
+.header {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    position: fixed;
+    top: 0;
+    padding: 30px;
+    background: #000;
+    z-index: 9999999999;
+}
+
+.header .logo {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 800;
+    width: 20%;
+}
+
+.header .logo a{
+    color: #fff;
+}
+
+.header .logo , .list {
+    display: inline-block;
+}
+
+.header .list {
+    width: 50%;
+    text-transform: capitalize;
+}
+
+.header .list ul {
+    position: relative;
+}
+
+.header .list li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    padding-right: 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.header .list li a{
+    color: #fff;
+    position: relative;
+}
+
+.search_bar{
+    display: inline-block;
+    background: #fff;
+    border-radius: 30px;
+    height: 30px;
+    transition: 0.8s;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+}
+
+.search_bar input {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 0;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+}
+
+.search_bar:hover input {
+    width: 200px;
+}
+/* Category */
+.categories {
+    position: absolute;
+    top: 90px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background: rgb(153, 151, 151);
+}
+
+.categories .category {
+    position: relative;
+    width: 24%;
+    margin: 30px 0;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+
+.categories .category:hover {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.363);
+    border-radius: 10px;
+}
+
+.categories .category img {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.categories .category .text {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    position: absolute;
+    border-radius: 10px;
+    top: 115px;
+    color: #fff;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.categories .category .text:hover {
+    opacity: 1;
+    border-radius: 10px;
+    width: 100%;
+}
